@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ClockApp.Views.ClockPage"
+    xmlns:vm="clr-namespace:ClockApp.ViewModels"
+    BackgroundColor="Black">
+
+    <FlexLayout Direction="Column" JustifyContent="Center" Padding="20, -30, 0, 0">
+        
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="24" TextColor="White" Margin="0, 0, -5, 0" Text="{Binding Day}"/>
+            <Label FontSize="24" TextColor="White" Margin="0, 0, -5, 0" Text="/"/>
+            <Label FontSize="24" TextColor="White" Margin="0, 0, -5, 0" Text="{Binding Month}"/>
+            <Label FontSize="24" TextColor="White" Margin="0, 0, -5, 0" Text="/"/>
+            <Label FontSize="24" TextColor="White" Margin="0, 0, -5, 0" Text="{Binding Year}"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="0, -20">
+            <Label FontSize="112" Margin="-5, 0" TextColor="White" Text="{Binding Hour}"/>
+            <Label FontSize="112" Margin="-5, 0" TextColor="White" Text=":"/>
+            <Label FontSize="112" Margin="-5, 0" TextColor="White" Text="{Binding Minute}"/>
+            <Label FontSize="112" Margin="-5, 0" TextColor="White" Text=":"/>
+            <StackLayout Orientation="Horizontal" Margin="-5, 0">
+                <Label FontSize="112" TextColor="White" Text="{Binding Second}"/>
+                <Label FontSize="24" Margin="0,  0, -50, 0" TextColor="White" VerticalTextAlignment="Center" Text="{Binding Millisecond}"/>
+            </StackLayout>
+        </StackLayout>
+        
+    </FlexLayout>
+
+</ContentPage>
