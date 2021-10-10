@@ -1,2 +1,2 @@
 # xamarin-clock-app
-A simple Clock app built with Xamarin.
+A simple clock app built with Xamarin.
